@@ -1,46 +1,17 @@
 const courses = [
-
-  {
-    code: "WDD 130",
-    name: "Web Fundamentals",
-    credits: 2,
-    completed: true,
-    type: "WDD"
-  },
-
-  {
-    code: "WDD 131",
-    name: "Dynamic Web Fundamentals",
-    credits: 2,
-    completed: true,
-    type: "WDD"
-  },
-
-  {
-    code: "WDD 231",
-    name: "Web Frontend Development I",
-    credits: 2,
-    completed: false,
-    type: "WDD"
-  }
-
+  { code: "WDD 130", name: "Web Fundamentals", credits: 2, completed: true, type: "WDD" },
+  { code: "WDD 131", name: "Dynamic Web Fundamentals", credits: 2, completed: true, type: "WDD" },
+  { code: "WDD 231", name: "Web Frontend Development I", credits: 2, completed: false, type: "WDD" }
 ];
 
-const container =
-document.getElementById("courseContainer");
+const container = document.getElementById("courseContainer");
+const totalCredits = document.getElementById("totalCredits");
 
-const totalCredits =
-document.getElementById("totalCredits");
-
-/* DISPLAY COURSES */
 function displayCourses(courseList) {
-
   container.innerHTML = "";
 
   courseList.forEach(course => {
-
     const card = document.createElement("div");
-
     card.classList.add("course-card");
 
     if (course.completed) {
@@ -49,50 +20,25 @@ function displayCourses(courseList) {
 
     card.innerHTML = `
       <h3>${course.code}</h3>
-
       <p>${course.name}</p>
-
       <p>${course.credits} Credits</p>
     `;
 
     container.appendChild(card);
-
   });
 
-  const credits = courseList.reduce(
-    (total, course) => total + course.credits,
-    0
-  );
-
+  const credits = courseList.reduce((sum, c) => sum + c.credits, 0);
   totalCredits.textContent = credits;
-
 }
 
-/* DEFAULT */
 displayCourses(courses);
 
-/* FILTERS */
-document.getElementById("all")
-.addEventListener("click", () => {
+document.getElementById("all").addEventListener("click", () => displayCourses(courses));
 
-  displayCourses(courses);
+document.getElementById("wdd").addEventListener("click", () =>
+  displayCourses(courses.filter(c => c.type === "WDD"))
+);
 
-});
-
-document.getElementById("wdd")
-.addEventListener("click", () => {
-
-  displayCourses(
-    courses.filter(course => course.type === "WDD")
-  );
-
-});
-
-document.getElementById("cse")
-.addEventListener("click", () => {
-
-  displayCourses(
-    courses.filter(course => course.type === "CSE")
-  );
-
-});
+document.getElementById("cse").addEventListener("click", () =>
+  displayCourses(courses.filter(c => c.type === "CSE"))
+);
