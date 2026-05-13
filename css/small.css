@@ -1,1 +1,19 @@
+/* Hide nav by default on small screens */
+#navMenu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
 
+/* Show when active */
+#navMenu.show {
+  display: flex;
+}
+
+/* Hamburger button */
+#menuBtn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
