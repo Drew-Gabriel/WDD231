@@ -3,32 +3,25 @@
 <head>
 
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description" content="WDD 231 Course Home Page">
-
   <meta name="author" content="Gabriel Drew Benson">
 
   <title>WDD 231 Home</title>
 
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/small.css">
-
   <link rel="stylesheet" href="css/larger.css">
 
-  <!-- JAVASCRIPT -->
+  <!-- JS -->
   <script src="scripts/navigation.js" defer></script>
-
   <script src="scripts/date.js" defer></script>
-
   <script src="scripts/courses.js" defer></script>
 
 </head>
@@ -38,23 +31,16 @@
 <header>
 
   <div class="logo-container">
-
     <img src="images/logo.svg.png" alt="Website Logo" class="logo">
-
     <span class="site-name">Gabriel Drew Benson</span>
-
   </div>
 
   <button id="menuBtn" aria-label="Open Navigation Menu">☰</button>
 
   <nav id="navMenu">
-
     <a class="active" href="index.html">Home</a>
-
     <a href="chamber/index.html">Chamber Project</a>
-
     <a href="final/index.html">Final Project</a>
-
   </nav>
 
 </header>
@@ -63,49 +49,31 @@
 
   <h1>Home</h1>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
 
-    <!-- ABOUT ME -->
+    <!-- ABOUT -->
     <div class="about">
 
       <h2>About Me</h2>
 
       <div class="about-content">
-
         <p>
           Hello! My name is Gabriel Drew Benson from Benin City, Nigeria.
-
           I am currently studying Web Frontend Development in WDD 231.
-          I enjoy building responsive and user-friendly websites while improving my skills in HTML, CSS, and JavaScript.
-
-          I am passionate about technology, creativity, and learning new things that help me grow as a frontend developer.
+          I enjoy building responsive and user-friendly websites using HTML, CSS, and JavaScript.
         </p>
-
-        <div class="socials">
-
-          <p><strong>Facebook:</strong> Gabriel Drew Benson</p>
-
-          <p><strong>Email:</strong> gabjacz@example.com</p>
-
-          <p><strong>X (Twitter):</strong> @gabriel</p>
-
-          <p><strong>Instagram:</strong> @gabriel.drew</p>
-
-          <p><strong>LinkedIn:</strong> Gabriel Drew Benson</p>
-
-        </div>
-
       </div>
 
     </div>
 
-    <!-- STUDENT PHOTO -->
+    <!-- PHOTO -->
     <div class="student-photo">
 
       <h2>Student Photo</h2>
 
-      <img src="images/Profile.jpg" alt="Portrait of Gabriel Drew Benson">
+      <!-- FIXED IMAGE -->
+      <img src="images/profile.jpg" alt="Portrait of Gabriel Drew Benson">
 
     </div>
 
@@ -116,26 +84,16 @@
 
     <h2>Web Certificate Courses</h2>
 
-    <!-- FILTERS -->
     <div class="filters">
-
       <button id="all">All</button>
-
       <button id="cse">CSE</button>
-
       <button id="wdd">WDD</button>
-
     </div>
 
-    <!-- COURSES -->
     <div id="courseContainer"></div>
 
-    <!-- CREDITS -->
     <p class="credits">
-
-      The total credits for course listed above is
-      <span id="totalCredits"></span>
-
+      Total Credits: <span id="totalCredits"></span>
     </p>
 
   </section>
@@ -145,21 +103,14 @@
 <footer>
 
   <div class="footer-socials">
-
     <p>LinkedIn</p>
-
     <p>GitHub</p>
-
     <p>X</p>
-
   </div>
 
   <p>
-
     &copy; <span id="year"></span>
-
     Gabriel Drew Benson | Benin City, Nigeria
-
   </p>
 
   <p id="lastModified"></p>
