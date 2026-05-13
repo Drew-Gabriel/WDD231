@@ -1,51 +1,108 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  background: #f9f9f9;
+  color: #222;
 }
 
+/* HEADER */
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  padding: 10px 15px;
+  background: #004080;
+  color: white;
 }
 
+header span {
+  font-weight: bold;
+}
+
+/* NAV */
 #navMenu {
   display: none;
   flex-direction: column;
-  gap: 10px;
+  background: #003060;
+  padding: 10px;
+}
+
+#navMenu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+
+#navMenu a:hover {
+  background: #0050a0;
 }
 
 #navMenu.show {
   display: flex;
 }
 
+/* HAMBURGER */
 #menuBtn {
   font-size: 2rem;
   background: none;
   border: none;
+  color: white;
   cursor: pointer;
 }
 
+/* MAIN */
+main {
+  padding: 15px;
+}
+
+section {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* BUTTONS */
 .buttons {
   display: flex;
   gap: 10px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
+.buttons button {
+  padding: 8px;
+  border: none;
+  background: #004080;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #0060c0;
+}
+
+/* COURSE GRID */
 #courseContainer {
   display: grid;
   gap: 10px;
 }
 
 #courseContainer div {
+  background: #eee;
   padding: 10px;
-  background: #f2f2f2;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
+/* COMPLETED */
 .completed {
   background: #c8f7c5 !important;
-  border: 2px solid green;
+  border-left: 5px solid green;
+}
+
+/* FOOTER */
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
