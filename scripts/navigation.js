@@ -3,8 +3,5 @@ const navMenu = document.getElementById("navMenu");
 
 menuBtn.addEventListener("click", () => {
   navMenu.classList.toggle("show");
-
-  menuBtn.textContent = navMenu.classList.contains("show")
-    ? "✖"
-    : "☰";
+  menuBtn.textContent = navMenu.classList.contains("show") ? "✖" : "☰";
 });
