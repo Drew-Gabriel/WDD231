@@ -7,15 +7,22 @@
   #navMenu {
     display: flex !important;
     flex-direction: row;
+    justify-content: center;
     gap: 20px;
   }
 
   main {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
   }
 
   #courseContainer {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
   }
 }
