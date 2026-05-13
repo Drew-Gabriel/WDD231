@@ -22,21 +22,20 @@ function displayCourses(list) {
     `;
 
     if (course.completed) {
-      card.style.background = "#c8f7c5";
-      card.style.border = "2px solid green";
+      card.classList.add("completed");
     }
 
     container.appendChild(card);
   });
 
-  const total = list.reduce((sum, course) => sum + course.credits, 0);
+  const total = list.reduce((sum, c) => sum + c.credits, 0);
   creditsDisplay.textContent = total;
 }
 
 // default load
 displayCourses(courses);
 
-// buttons
+// filters
 document.getElementById("all").addEventListener("click", () => {
   displayCourses(courses);
 });
