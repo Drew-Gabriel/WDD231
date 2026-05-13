@@ -1,23 +1,18 @@
 @media (min-width: 768px) {
 
-  /* HIDE MENU BUTTON */
   #menuBtn {
     display: none;
   }
 
-  /* HEADER */
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
   }
 
-  /* NAVIGATION */
   #navMenu {
     display: flex !important;
     flex-direction: row;
-    background: #111;
     margin-top: 0;
   }
 
@@ -25,28 +20,17 @@
     padding: 15px 25px;
   }
 
-  /* MAIN */
-  main {
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  /* HERO */
   .hero {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
   }
 
-  /* FILTER BUTTONS */
   .filters {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* COURSES */
   #courseContainer {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
