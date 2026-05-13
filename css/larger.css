@@ -1,4 +1,5 @@
 @media (min-width: 768px) {
+
   #menuBtn {
     display: none;
   }
@@ -7,5 +8,14 @@
     display: flex !important;
     flex-direction: row;
     gap: 20px;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  #courseContainer {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
