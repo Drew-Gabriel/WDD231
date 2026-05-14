@@ -1,60 +1,58 @@
-{
-  "members": [
-    {
-      "name": "Bright Solutions",
-      "address": "123 Main St, Cityville",
-      "phone": "555-123-4567",
-      "website": "https://www.brightsolutions.com",
-      "image": "bright.jpg",
-      "membership": "Gold"
-    },
-    {
-      "name": "Tech Innovators",
-      "address": "456 Elm St, Tech City",
-      "phone": "555-234-5678",
-      "website": "https://www.techinnovators.com",
-      "image": "th.jpg",
-      "membership": "Gold"
-    },
-    {
-      "name": "GreenTech Enterprises",
-      "address": "789 Oak St, Greenfield",
-      "phone": "555-345-6789",
-      "website": "https://www.greentech.com",
-      "image": "Green Earth GoodS.jpg",
-      "membership": "silver"
-    },
-    {
-      "name": "Future Horizons",
-      "address": "101 Pine St, Futuristown",
-      "phone": "555-456-7890",
-      "website": "https://www.futurehorizons.com",
-      "image": "techpic.png",
-      "membership": "Bronze"
-    },
-    {
-      "name": "Creative Minds",
-      "address": "202 Cedar St, Creationsville",
-      "phone": "555-567-8901",
-      "website": "https://www.creativeminds.com",
-      "image": "Creative Studio.jpg",
-      "membership": "Silver"
-    },
-    {
-      "name": "Tech Global",
-      "address": "303 Birch St, Global City",
-      "phone": "555-678-9012",
-      "website": "https://www.techglobal.com",
-      "image": "Digital Solutions.jpg",
-      "membership": "Gold"
-    },
-    {
-      "name": "Digital Solutions",
-      "address": "404 Maple St, Digital Town",
-      "phone": "555-789-0123",
-      "website": "https://www.digitalsolutions.com",
-      "image": "coom.jpg",
-      "membership": "Gold"
-    }
-  ]
-}
+[
+  {
+    "name": "Tech Hub Ltd",
+    "address": "Abuja, Nigeria",
+    "phone": "+234 800 111 2222",
+    "website": "https://example.com",
+    "image": "company1.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Green Farms",
+    "address": "Lagos, Nigeria",
+    "phone": "+234 800 333 4444",
+    "website": "https://example.com",
+    "image": "company2.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Blue Logistics",
+    "address": "Abuja, Nigeria",
+    "phone": "+234 800 555 6666",
+    "website": "https://example.com",
+    "image": "company3.jpg",
+    "membership": "Member"
+  },
+  {
+    "name": "Skyline Builders",
+    "address": "Ibadan, Nigeria",
+    "phone": "+234 800 777 8888",
+    "website": "https://example.com",
+    "image": "company4.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Nexus Digital",
+    "address": "Enugu, Nigeria",
+    "phone": "+234 800 999 0000",
+    "website": "https://example.com",
+    "image": "company5.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Fresh Foods Ltd",
+    "address": "Kano, Nigeria",
+    "phone": "+234 800 121 2121",
+    "website": "https://example.com",
+    "image": "company6.jpg",
+    "membership": "Member"
+  },
+  {
+    "name": "Urban Solutions",
+    "address": "Abuja, Nigeria",
+    "phone": "+234 800 343 4545",
+    "website": "https://example.com",
+    "image": "company7.jpg",
+    "membership": "Gold"
+  }
+]
