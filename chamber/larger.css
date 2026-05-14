@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+
+  #menuBtn {
+    display: none;
+  }
+
+  #navMenu {
+    display: flex !important;
+    flex-direction: row;
+    background: #111;
+  }
+
+  #navMenu a {
+    padding: 15px 25px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
