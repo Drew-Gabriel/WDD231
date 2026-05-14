@@ -26,11 +26,13 @@ const courses = [
 
 ];
 
-const container = document.getElementById("courseContainer");
+const container =
+document.getElementById("courseContainer");
 
 const totalCredits =
-  document.getElementById("totalCredits");
+document.getElementById("totalCredits");
 
+/* DISPLAY COURSES */
 function displayCourses(courseList) {
 
   container.innerHTML = "";
@@ -66,11 +68,10 @@ function displayCourses(courseList) {
 
 }
 
-/* DEFAULT DISPLAY */
+/* DEFAULT */
 displayCourses(courses);
 
-/* FILTER BUTTONS */
-
+/* FILTERS */
 document.getElementById("all")
 .addEventListener("click", () => {
 
