@@ -1,58 +1,64 @@
 [
   {
-    "name": "Alpha Tech Ltd",
-    "address": "Lagos, Nigeria",
-    "phone": "+2348000000001",
+    "name": "Benin Tech Solutions",
+    "address": "12 Airport Road, Benin City",
+    "phone": "(234) 800-111-1111",
     "website": "https://example.com",
-    "image": "alpha.jpg",
+    "image": "business1.jpg",
     "membership": 3
   },
+
   {
-    "name": "Green Farms",
-    "address": "Abuja, Nigeria",
-    "phone": "+2348000000002",
+    "name": "Royal Fashion House",
+    "address": "45 Ring Road, Benin City",
+    "phone": "(234) 800-222-2222",
     "website": "https://example.com",
-    "image": "green.jpg",
+    "image": "business2.jpg",
     "membership": 2
   },
+
   {
-    "name": "City Builders",
-    "address": "Benin City, Nigeria",
-    "phone": "+2348000000003",
+    "name": "Edo Food Market",
+    "address": "20 Akpakpava Road",
+    "phone": "(234) 800-333-3333",
     "website": "https://example.com",
-    "image": "city.jpg",
+    "image": "business3.jpg",
     "membership": 1
   },
+
   {
-    "name": "Bright Media",
-    "address": "Ibadan, Nigeria",
-    "phone": "+2348000000004",
+    "name": "Gabriel Electronics",
+    "address": "Sapele Road",
+    "phone": "(234) 800-444-4444",
     "website": "https://example.com",
-    "image": "bright.jpg",
+    "image": "business4.jpg",
     "membership": 2
   },
+
   {
-    "name": "Ocean Logistics",
-    "address": "Port Harcourt, Nigeria",
-    "phone": "+2348000000005",
+    "name": "City Printing Press",
+    "address": "Mission Road",
+    "phone": "(234) 800-555-5555",
     "website": "https://example.com",
-    "image": "ocean.jpg",
-    "membership": 3
-  },
-  {
-    "name": "Skyline Ventures",
-    "address": "Enugu, Nigeria",
-    "phone": "+2348000000006",
-    "website": "https://example.com",
-    "image": "skyline.jpg",
+    "image": "business5.jpg",
     "membership": 1
   },
+
   {
-    "name": "NextGen Solutions",
-    "address": "Kaduna, Nigeria",
-    "phone": "+2348000000007",
+    "name": "Benin Fitness Club",
+    "address": "GRA Benin",
+    "phone": "(234) 800-666-6666",
     "website": "https://example.com",
-    "image": "nextgen.jpg",
+    "image": "business6.jpg",
     "membership": 3
+  },
+
+  {
+    "name": "Naija Restaurant",
+    "address": "Ugbowo Lagos Road",
+    "phone": "(234) 800-777-7777",
+    "website": "https://example.com",
+    "image": "business7.jpg",
+    "membership": 2
   }
 ]
