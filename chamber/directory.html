@@ -1,51 +1,74 @@
-const membersContainer = document.querySelector('#members');
-const gridBtn = document.querySelector('#gridBtn');
-const listBtn = document.querySelector('#listBtn');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-const url = 'data/members.json';
+    <title>Abuja Chamber of Commerce Directory</title>
+    <meta name="description" content="Business directory for the Abuja Chamber of Commerce.">
+    <meta name="author" content="Your Full Name">
 
-async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Abuja Chamber of Commerce">
+    <meta property="og:description" content="Explore businesses in Abuja Chamber of Commerce.">
+    <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
 
-    displayMembers(data);
-}
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
 
-function displayMembers(members) {
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-    members.forEach(member => {
+    <!-- JS -->
+    <script src="scripts/directory.js" defer></script>
+</head>
 
-        const card = document.createElement('section');
+<body>
 
-        card.innerHTML = `
-            <img src="${member.image}" alt="${member.name}" loading="lazy">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">
-                Visit Website
-            </a>
-            <p>Membership Level: ${member.membership}</p>
-        `;
+<header>
+    <div class="logo">
+        <img src="images/logo.webp" alt="Chamber Logo">
+        <h1>Abuja Chamber of Commerce</h1>
+    </div>
 
-        membersContainer.appendChild(card);
-    });
-}
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+</header>
 
-getMembers();
+<main>
+    <h2>Business Directory</h2>
 
-gridBtn.addEventListener('click', () => {
-    membersContainer.classList.add('grid');
-    membersContainer.classList.remove('list');
-});
+    <div class="view-buttons">
+        <button id="gridBtn">Grid View</button>
+        <button id="listBtn">List View</button>
+    </div>
 
-listBtn.addEventListener('click', () => {
-    membersContainer.classList.add('list');
-    membersContainer.classList.remove('grid');
-});
+    <section id="members" class="grid"></section>
+</main>
 
-document.querySelector('#currentyear').textContent =
-    new Date().getFullYear();
+<footer>
+    <p>
+        Abuja Chamber of Commerce <br>
+        123 Central Business District <br>
+        info@abujachamber.org <br>
+        +234 800 000 0000
+    </p>
 
-document.querySelector('#lastModified').textContent =
-    `Last Modification: ${document.lastModified}`;
+    <p>
+        &copy; <span id="currentyear"></span> Your Name | WDD 231
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
