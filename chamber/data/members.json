@@ -29,43 +29,4 @@
     "description": "Electronics and gadgets store."
   },
 
-  {
-    "name": "Royal Taste Restaurant",
-    "address": "Sapele Road, Benin City",
-    "phone": "+2348044444444",
-    "website": "https://royaltaste.com",
-    "image": "images/business4.jpg",
-    "membership": 2,
-    "description": "Local and continental dishes restaurant."
-  },
-
-  {
-    "name": "Benin Fashion House",
-    "address": "Airport Road, Benin City",
-    "phone": "+2348055555555",
-    "website": "https://beninfashion.com",
-    "image": "images/business5.jpg",
-    "membership": 3,
-    "description": "Fashion design and clothing brand."
-  },
-
-  {
-    "name": "Edo Auto Repairs",
-    "address": "Uselu, Benin City",
-    "phone": "+2348066666666",
-    "website": "https://edoautorepairs.com",
-    "image": "images/business6.jpg",
-    "membership": 1,
-    "description": "Automobile servicing and maintenance."
-  },
-
-  {
-    "name": "Sunrise Pharmacy",
-    "address": "New Lagos Road, Benin City",
-    "phone": "+2348077777777",
-    "website": "https://sunrisepharmacy.com",
-    "image": "images/business7.jpg",
-    "membership": 2,
-    "description": "Healthcare and pharmaceutical services."
-  }
-]
+  
