@@ -6,7 +6,4 @@ menuBtn.addEventListener("click", () => {
 
   navMenu.classList.toggle("show");
 
-  menuBtn.textContent =
-    navMenu.classList.contains("show") ? "✖" : "☰";
-
 });
