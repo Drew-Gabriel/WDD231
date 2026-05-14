@@ -1,25 +1,42 @@
 [
   {
     "name": "GabTech Solutions",
-    "address": "Benin City",
+    "address": "Aduwawa, Benin City",
     "phone": "+2348011111111",
-    "website": "https://example.com",
-    "image": "images/business1.jpg"
+    "website": "https://gabtech.com",
+    "image": "images/business1.jpg",
+    "membership": 3,
+    "description": "Technology and software solutions company."
   },
 
   {
     "name": "Aduwawa Market Hub",
-    "address": "Aduwawa, Benin",
+    "address": "Aduwawa, Benin City",
     "phone": "+2348022222222",
-    "website": "https://example.com",
-    "image": "images/business2.jpg"
+    "website": "https://aduwawamarket.com",
+    "image": "images/business2.jpg",
+    "membership": 2,
+    "description": "Retail and wholesale business center."
   },
 
   {
     "name": "Benson Electronics",
-    "address": "Benin City",
+    "address": "Ring Road, Benin City",
     "phone": "+2348033333333",
-    "website": "https://example.com",
-    "image": "images/business3.jpg"
-  }
-]
+    "website": "https://bensonelectronics.com",
+    "image": "images/business3.jpg",
+    "membership": 1,
+    "description": "Electronics and gadgets store."
+  },
+
+  {
+    "name": "Royal Taste Restaurant",
+    "address": "Sapele Road, Benin City",
+    "phone": "+2348044444444",
+    "website": "https://royaltaste.com",
+    "image": "images/business4.jpg",
+    "membership": 2,
+    "description": "Local and continental dishes restaurant."
+  },
+
+  
