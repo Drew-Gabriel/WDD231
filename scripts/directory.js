@@ -1,59 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-[
-  {
-    "name": "Alpha Tech Ltd",
-    "address": "Lagos, Nigeria",
-    "phone": "+2348000000001",
-    "website": "https://example.com",
-    "image": "alpha.jpg",
-    "membership": 3
-  },
-  {
-    "name": "Green Farms",
-    "address": "Abuja, Nigeria",
-    "phone": "+2348000000002",
-    "website": "https://example.com",
-    "image": "green.jpg",
-    "membership": 2
-  },
-  {
-    "name": "City Builders",
-    "address": "Benin City, Nigeria",
-    "phone": "+2348000000003",
-    "website": "https://example.com",
-    "image": "city.jpg",
-    "membership": 1
-  },
-  {
-    "name": "Bright Media",
-    "address": "Ibadan, Nigeria",
-    "phone": "+2348000000004",
-    "website": "https://example.com",
-    "image": "bright.jpg",
-    "membership": 2
-  },
-  {
-    "name": "Ocean Logistics",
-    "address": "Port Harcourt, Nigeria",
-    "phone": "+2348000000005",
-    "website": "https://example.com",
-    "image": "ocean.jpg",
-    "membership": 3
-  },
-  {
-    "name": "Skyline Ventures",
-    "address": "Enugu, Nigeria",
-    "phone": "+2348000000006",
-    "website": "https://example.com",
-    "image": "skyline.jpg",
-    "membership": 1
-  },
-  {
-    "name": "NextGen Solutions",
-    "address": "Kaduna, Nigeria",
-    "phone": "+2348000000007",
-    "website": "https://example.com",
-    "image": "nextgen.jpg",
-    "membership": 3
-  }
-]
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Benin City Chamber of Commerce Directory Page">
+
+  <meta name="author" content="Gabriel Drew Benson">
+
+  <title>Benin Chamber Directory</title>
+
+  <link rel="stylesheet" href="css/small.css">
+
+  <link rel="stylesheet" href="css/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+
+  <script src="scripts/date.js" defer></script>
+
+  <script src="scripts/members.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="top-header">
+
+    <div class="logo-area">
+
+      <img src="../images/logo.svg.png" alt="Benin Chamber Logo">
+
+      <div>
+        <h2>Benin Chamber of Commerce</h2>
+      </div>
+
+    </div>
+
+    <button id="menuBtn">☰</button>
+
+  </div>
+
+  <nav id="navMenu">
+
+    <a href="../index.html">Home</a>
+
+    <a class="active" href="directory.html">Directory</a>
+
+    <a href="#">Join</a>
+
+    <a href="#">Discover</a>
+
+  </nav>
+
+</header>
+
+<main>
+
+  <h1>Business Directory</h1>
+
+  <div class="view-buttons">
+
+    <button id="gridView">Grid</button>
+
+    <button id="listView">List</button>
+
+  </div>
+
+  <section id="members" class="grid"></section>
+
+</main>
+
+<footer>
+
+  <div class="footer-info">
+
+    <div>
+      <h3>Benin Chamber of Commerce</h3>
+
+      <p>Benin City, Edo State</p>
+
+      <p>info@beninchamber.org</p>
+
+      <p>(234) 800-000-0000</p>
+    </div>
+
+    <div class="socials">
+
+      <p>YouTube</p>
+
+      <p>Twitter</p>
+
+      <p>LinkedIn</p>
+
+    </div>
+
+    <div>
+
+      <p>WDD231 Class Project</p>
+
+      <p>Gabriel Drew Benson</p>
+
+      <p>&copy; <span id="year"></span></p>
+
+      <p id="lastModified"></p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
