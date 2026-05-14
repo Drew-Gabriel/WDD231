@@ -1,1 +1,16 @@
+@media screen and (min-width: 768px) {
 
+  .info-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+}
