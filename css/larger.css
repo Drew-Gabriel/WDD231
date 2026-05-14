@@ -1,30 +1,37 @@
 @media (min-width: 768px) {
 
-  header {
-    text-align: center;
+  #menuBtn {
+    display: none;
   }
 
-  /* NAV UNDER SITE NAME SPREAD LIKE SECTION */
   #navMenu {
+    display: flex !important;
     flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    background: #222;
-    padding: 10px;
+    position: static;
+    width: auto;
+    background: none;
   }
 
   #navMenu a {
-    padding: 10px 20px;
+    border-radius: 5px;
   }
 
-  /* ABOUT + PHOTO SIDE BY SIDE */
-  .grid-section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+  .hero {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
   }
 
-  /* COURSES GRID */
+  .student-photo,
+  .about {
+    flex: 1;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+  }
+
   #courseContainer {
     grid-template-columns: repeat(3, 1fr);
   }
