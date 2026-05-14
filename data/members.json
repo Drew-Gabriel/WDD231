@@ -1,1 +1,58 @@
-
+[
+  {
+    "name": "Alpha Tech Ltd",
+    "address": "Lagos, Nigeria",
+    "phone": "+2348000000001",
+    "website": "https://example.com",
+    "image": "alpha.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Green Farms",
+    "address": "Abuja, Nigeria",
+    "phone": "+2348000000002",
+    "website": "https://example.com",
+    "image": "green.jpg",
+    "membership": 2
+  },
+  {
+    "name": "City Builders",
+    "address": "Benin City, Nigeria",
+    "phone": "+2348000000003",
+    "website": "https://example.com",
+    "image": "city.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Bright Media",
+    "address": "Ibadan, Nigeria",
+    "phone": "+2348000000004",
+    "website": "https://example.com",
+    "image": "bright.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Ocean Logistics",
+    "address": "Port Harcourt, Nigeria",
+    "phone": "+2348000000005",
+    "website": "https://example.com",
+    "image": "ocean.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Skyline Ventures",
+    "address": "Enugu, Nigeria",
+    "phone": "+2348000000006",
+    "website": "https://example.com",
+    "image": "skyline.jpg",
+    "membership": 1
+  },
+  {
+    "name": "NextGen Solutions",
+    "address": "Kaduna, Nigeria",
+    "phone": "+2348000000007",
+    "website": "https://example.com",
+    "image": "nextgen.jpg",
+    "membership": 3
+  }
+]
