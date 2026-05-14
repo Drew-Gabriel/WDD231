@@ -22,11 +22,9 @@ header {
 .logo {
   width: 50px;
   height: 50px;
-  object-fit: cover;
 }
 
 .site-name {
-  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -38,14 +36,12 @@ header {
   font-size: 2rem;
   border: none;
   background: none;
-  cursor: pointer;
 }
 
 /* NAV */
 #navMenu {
   display: none;
   flex-direction: column;
-  margin-top: 15px;
   background: #111;
 }
 
@@ -55,16 +51,8 @@ header {
 
 #navMenu a {
   color: white;
-  text-decoration: none;
   padding: 12px;
-}
-
-#navMenu a:hover {
-  background: #444;
-}
-
-#navMenu a.active {
-  background: #333;
+  text-decoration: none;
 }
 
 /* MAIN */
@@ -98,10 +86,6 @@ main {
 }
 
 /* PHOTO */
-.student-photo {
-  text-align: center;
-}
-
 .student-photo img {
   width: 220px;
   height: 220px;
@@ -123,7 +107,6 @@ main {
   padding: 12px;
   border: none;
   background: #ddd;
-  cursor: pointer;
 }
 
 /* COURSES */
@@ -137,7 +120,6 @@ main {
   background: #ddd;
   padding: 15px;
   text-align: center;
-  border-radius: 5px;
 }
 
 .completed {
