@@ -1,49 +1,92 @@
-const courses = [
-  { code: "CSE 110", name: "Intro to Programming", credits: 2, completed: true, type: "CSE" },
-  { code: "WDD 130", name: "Web Fundamentals", credits: 2, completed: true, type: "WDD" },
-  { code: "CSE 111", name: "Programming with Functions", credits: 2, completed: false, type: "CSE" },
-  { code: "CSE 210", name: "Programming with Classes", credits: 2, completed: false, type: "CSE" },
-  { code: "WDD 231", name: "Web Frontend Development I", credits: 2, completed: false, type: "WDD" }
-];
-
-const container = document.getElementById("courseContainer");
-const creditsDisplay = document.getElementById("totalCredits");
-
-function displayCourses(list) {
-  container.innerHTML = "";
-
-  list.forEach(course => {
-    const card = document.createElement("div");
-
-    card.innerHTML = `
-      <h3>${course.code}</h3>
-      <p>${course.name}</p>
-      <p>${course.credits} credits</p>
-    `;
-
-    if (course.completed) {
-      card.classList.add("completed");
-    }
-
-    container.appendChild(card);
-  });
-
-  const total = list.reduce((sum, c) => sum + c.credits, 0);
-  creditsDisplay.textContent = total;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
 }
 
-// default load
-displayCourses(courses);
+/* HEADER */
+header {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 15px;
+}
 
-// filters
-document.getElementById("all").addEventListener("click", () => {
-  displayCourses(courses);
-});
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-document.getElementById("wdd").addEventListener("click", () => {
-  displayCourses(courses.filter(c => c.type === "WDD"));
-});
+.logo {
+  width: 60px;
+}
 
-document.getElementById("cse").addEventListener("click", () => {
-  displayCourses(courses.filter(c => c.type === "CSE"));
-});
+/* NAV UNDER SITE NAME */
+#navMenu {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#navMenu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background: #222;
+}
+
+/* MAIN */
+main {
+  padding: 15px;
+}
+
+/* CARDS (About + Photo + Courses) */
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.card h2 {
+  background: #222;
+  color: white;
+  padding: 10px;
+  margin: -15px -15px 15px -15px;
+}
+
+/* PHOTO */
+.card img {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* COURSES */
+#courseContainer {
+  display: grid;
+  gap: 10px;
+}
+
+.course-card {
+  background: #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.completed {
+  background: #004080;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
