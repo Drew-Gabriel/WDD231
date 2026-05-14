@@ -8,9 +8,11 @@ const container = document.getElementById("courseContainer");
 const totalCredits = document.getElementById("totalCredits");
 
 function displayCourses(courseList) {
+
   container.innerHTML = "";
 
   courseList.forEach(course => {
+
     const card = document.createElement("div");
     card.classList.add("course-card");
 
@@ -33,6 +35,7 @@ function displayCourses(courseList) {
 
 displayCourses(courses);
 
+/* FILTERS */
 document.getElementById("all").addEventListener("click", () => displayCourses(courses));
 
 document.getElementById("wdd").addEventListener("click", () =>
