@@ -1,63 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+const membersContainer = document.querySelector("#members");
 
-  <title>Chamber Directory | WDD 231</title>
-  <meta name="description" content="Chamber of Commerce Directory Page">
-  <meta name="author" content="Your Full Name">
+async function getMembers() {
+  const response = await fetch("data/members.json");
+  const data = await response.json();
+  displayMembers(data);
+}
 
-  <!-- FAVICON -->
-  <link rel="icon" href="images/byui-logo.png">
+function displayMembers(members) {
+  membersContainer.innerHTML = "";
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/small.css">
-  <link rel="stylesheet" href="css/large.css">
+  members.forEach(member => {
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-  <!-- SOCIAL MEDIA -->
-  <meta property="og:title" content="Chamber Directory">
-  <meta property="og:description" content="Local Chamber of Commerce Directory">
-  <meta property="og:image" content="images/byui-logo.png">
-  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
-</head>
+    card.innerHTML = `
+      <img src="images/${member.image}" alt="${member.name}">
+      <h3>${member.name}</h3>
+      <p>${member.address}</p>
+      <p>${member.phone}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+      <p>Membership: ${member.membership}</p>
+    `;
 
-<body>
+    membersContainer.appendChild(card);
+  });
+}
 
-<header>
-  <img src="images/byui-logo.png" alt="BYU-I Logo" width="60">
-  <h1>WDD 231 Chamber</h1>
+// Toggle Views
+document.getElementById("gridBtn").addEventListener("click", () => {
+  membersContainer.classList.add("grid");
+  membersContainer.classList.remove("list");
+});
 
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="directory.html">Home</a>
-    <a href="#">W1</a>
-    <a href="#">W2</a>
-    <a href="#">W3</a>
-    <a href="#">W4</a>
-    <a href="#">W5</a>
-    <a href="#">W6</a>
-    <a href="#">W7</a>
-  </nav>
-</header>
+document.getElementById("listBtn").addEventListener("click", () => {
+  membersContainer.classList.add("list");
+  membersContainer.classList.remove("grid");
+});
 
-<main>
-  <h2>Directory</h2>
+// Footer dates
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
-  <div class="view-buttons">
-    <button id="gridBtn">Grid View</button>
-    <button id="listBtn">List View</button>
-  </div>
-
-  <section id="members" class="grid"></section>
-</main>
-
-<footer>
-  <p>&copy; <span id="year"></span> Your Name | WDD 231</p>
-  <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
-
-<script src="js/directory.js"></script>
-</body>
-</html>
+// Run
+getMembers();
