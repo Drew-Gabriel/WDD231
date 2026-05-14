@@ -1,1 +1,71 @@
+[
+  {
+    "name": "GabTech Solutions",
+    "address": "Aduwawa, Benin City",
+    "phone": "+2348011111111",
+    "website": "https://gabtech.com",
+    "image": "images/business1.jpg",
+    "membership": 3,
+    "description": "Technology and software solutions company."
+  },
 
+  {
+    "name": "Aduwawa Market Hub",
+    "address": "Aduwawa, Benin City",
+    "phone": "+2348022222222",
+    "website": "https://aduwawamarket.com",
+    "image": "images/business2.jpg",
+    "membership": 2,
+    "description": "Retail and wholesale business center."
+  },
+
+  {
+    "name": "Benson Electronics",
+    "address": "Ring Road, Benin City",
+    "phone": "+2348033333333",
+    "website": "https://bensonelectronics.com",
+    "image": "images/business3.jpg",
+    "membership": 1,
+    "description": "Electronics and gadgets store."
+  },
+
+  {
+    "name": "Royal Taste Restaurant",
+    "address": "Sapele Road, Benin City",
+    "phone": "+2348044444444",
+    "website": "https://royaltaste.com",
+    "image": "images/business4.jpg",
+    "membership": 2,
+    "description": "Local and continental dishes restaurant."
+  },
+
+  {
+    "name": "Benin Fashion House",
+    "address": "Airport Road, Benin City",
+    "phone": "+2348055555555",
+    "website": "https://beninfashion.com",
+    "image": "images/business5.jpg",
+    "membership": 3,
+    "description": "Fashion design and clothing brand."
+  },
+
+  {
+    "name": "Edo Auto Repairs",
+    "address": "Uselu, Benin City",
+    "phone": "+2348066666666",
+    "website": "https://edoautorepairs.com",
+    "image": "images/business6.jpg",
+    "membership": 1,
+    "description": "Automobile servicing and maintenance."
+  },
+
+  {
+    "name": "Sunrise Pharmacy",
+    "address": "New Lagos Road, Benin City",
+    "phone": "+2348077777777",
+    "website": "https://sunrisepharmacy.com",
+    "image": "images/business7.jpg",
+    "membership": 2,
+    "description": "Healthcare and pharmaceutical services."
+  }
+]
