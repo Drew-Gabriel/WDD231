@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <meta name="description" content="Lagos Chamber of Commerce Directory Page" />
+  <meta name="author" content="Taiye Gabriel Adebenson" />
+
+  <title>WDD 231 | Chamber Directory</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../images/favicon.ico" />
+
+  <!-- CSS (normalize FIRST) -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/small.css" />
+  <link rel="stylesheet" href="../css/larger.css" />
+
+  <!-- JS -->
+  <script src="../scripts/directory.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lagos Chamber Directory" />
+  <meta property="og:description" content="Business directory for Lagos Chamber of Commerce" />
+  <meta property="og:image" content="../images/preview.jpg" />
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html" />
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="../images/byui-logo.png" alt="BYU-Idaho Logo" />
+    <h1>WDD 231</h1>
+  </div>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="directory.html" class="active">Directory</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Chamber Directory</h1>
+
+  <!-- VIEW TOGGLE -->
+  <div class="view-toggle">
+    <button id="gridBtn">Grid</button>
+    <button id="listBtn">List</button>
+  </div>
+
+  <!-- MEMBERS -->
+  <section id="membersContainer"></section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Taiye Gabriel Adebenson | WDD 231</p>
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
