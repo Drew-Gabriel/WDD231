@@ -10,13 +10,17 @@
     align-items: center;
   }
 
+  /* FIX NAV SPACING (IMPORTANT) */
   #navMenu {
     display: flex !important;
     flex-direction: row;
-    margin-top: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    background: none;
   }
 
   #navMenu a {
+    color: black;
     padding: 15px 25px;
   }
 
