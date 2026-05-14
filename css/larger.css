@@ -1,39 +1,30 @@
 @media (min-width: 768px) {
 
-  #menuBtn {
-    display: none;
-  }
-
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
   }
 
-  /* FIX NAV SPACING (IMPORTANT) */
+  /* NAV UNDER SITE NAME SPREAD LIKE SECTION */
   #navMenu {
-    display: flex !important;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    background: none;
+    justify-content: center;
+    gap: 40px;
+    background: #222;
+    padding: 10px;
   }
 
   #navMenu a {
-    color: black;
-    padding: 15px 25px;
+    padding: 10px 20px;
   }
 
-  .hero {
+  /* ABOUT + PHOTO SIDE BY SIDE */
+  .grid-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
   }
 
-  .filters {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
+  /* COURSES GRID */
   #courseContainer {
     grid-template-columns: repeat(3, 1fr);
   }
