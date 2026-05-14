@@ -1,1 +1,46 @@
+/* =========================
+   DESKTOP ONLY STYLES
+========================= */
 
+@media (min-width: 768px) {
+
+  /* ================= NAVIGATION ================= */
+  #navMenu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    width: auto;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  /* ================= MAIN LAYOUT ================= */
+  main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  /* ================= COURSE GRID ================= */
+  #courseContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ================= HEADER SPACING ================= */
+  header {
+    align-items: center;
+  }
+
+  /* ================= SECTION ALIGNMENT ================= */
+  section {
+    padding: 1.5rem;
+  }
+
+  /* ================= BUTTON ALIGNMENT ================= */
+  .buttons {
+    justify-content: flex-start;
+  }
+}
