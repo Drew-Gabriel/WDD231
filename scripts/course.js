@@ -5,43 +5,35 @@ const courses = [
 ];
 
 const container = document.getElementById("courseContainer");
-const totalCredits = document.getElementById("totalCredits");
 
-function displayCourses(courseList) {
-
+function displayCourses(list) {
   container.innerHTML = "";
 
-  courseList.forEach(course => {
-
-    const card = document.createElement("div");
-    card.classList.add("course-card");
+  list.forEach(course => {
+    const div = document.createElement("div");
+    div.classList.add("course-card");
 
     if (course.completed) {
-      card.classList.add("completed");
+      div.classList.add("completed");
     }
 
-    card.innerHTML = `
+    div.innerHTML = `
       <h3>${course.code}</h3>
       <p>${course.name}</p>
       <p>${course.credits} Credits</p>
     `;
 
-    container.appendChild(card);
+    container.appendChild(div);
   });
-
-  const credits = courseList.reduce((sum, c) => sum + c.credits, 0);
-  totalCredits.textContent = credits;
 }
 
 displayCourses(courses);
 
 /* FILTERS */
-document.getElementById("all").addEventListener("click", () => displayCourses(courses));
+document.getElementById("all").onclick = () => displayCourses(courses);
 
-document.getElementById("wdd").addEventListener("click", () =>
-  displayCourses(courses.filter(c => c.type === "WDD"))
-);
+document.getElementById("wdd").onclick = () =>
+  displayCourses(courses.filter(c => c.type === "WDD"));
 
-document.getElementById("cse").addEventListener("click", () =>
-  displayCourses(courses.filter(c => c.type === "CSE"))
-);
+document.getElementById("cse").onclick = () =>
+  displayCourses(courses.filter(c => c.type === "CSE"));
