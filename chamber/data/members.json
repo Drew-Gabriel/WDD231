@@ -3,7 +3,8 @@
     "name": "GabTech Solutions",
     "address": "Benin City",
     "phone": "+2348011111111",
-    "website": "https://example.com",
+    "email" "gabjacz@gmail.com",
+    "website": "gabrielbusiness.com",
     "image": "images/business1.jpg"
   },
 
@@ -11,7 +12,8 @@
     "name": "Aduwawa Market Hub",
     "address": "Aduwawa, Benin",
     "phone": "+2348022222222",
-    "website": "https://example.com",
+    "email" "gabjacz@gmail.com",
+    "website": "gabrielbusiness.com",
     "image": "images/business2.jpg"
   },
 
@@ -19,7 +21,8 @@
     "name": "Benson Electronics",
     "address": "Benin City",
     "phone": "+2348033333333",
-    "website": "https://example.com",
+    "email" "gabjacz@gmail.com",
+    "website": "https:gabrielbuiness.com",
     "image": "images/business3.jpg"
   }
 ]
